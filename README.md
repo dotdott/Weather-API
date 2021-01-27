@@ -4,7 +4,9 @@ https://dotdott.github.io/Weather-API/
 
 
 A small project using @OpenWeatherApi to display the weather condition of the user, acessing the user location with geolocation if allowed, if not displaying a fixed location in this case 'San Francisco'.
+
 It get the user city, the weather conditions & weather degrees. The user is allowed to change from Fahrenheit to Celsius by clicking  in the degree and it will automaticly convert forth and back Fahrenheit/Celsius.
+
 Also have icon giving by WeatherApi according to weather condition.
 
 Then, i used another api @MapQuest to get a small 'map' to display the user position and display it below the city name.
