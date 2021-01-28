@@ -7,6 +7,6 @@ A small project using @OpenWeatherApi to display the user weather condition, ace
 
 It get the user city, the weather conditions & weather degrees. The user is allowed to change from Fahrenheit to Celsius by clicking  in the degree and it will automaticly converting back and forth to Fahrenheit/Celsius.
 
-Also have icon giving by WeatherApi according to weather condition.
+Also have icon giving by WeatherApi according to weather condition && background color ajusting according to the weather condition.
 
 Then, i used another api @MapQuest to get a small 'map' to display the user position and display it below the city name.
