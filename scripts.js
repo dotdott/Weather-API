@@ -35,6 +35,7 @@ if(navigator.geolocation){
         //SETTING ICON
         const icon = data.weather[0].icon;
         setIcon(icon);
+        toggleBodyColor(icon)
 
         document.querySelector('.degree-section').addEventListener('click',
         () => FahrenheitToCelsius(fah));
@@ -48,6 +49,29 @@ function setIcon(icon){
     const img = document.createElement('img');
     img.src = iconURL;
     iconSection.appendChild(img);
+}
+
+function toggleBodyColor(icon){
+    if(icon == '01d'){
+       return document.body.style.backgroundImage = 'linear-gradient(to right, #fa709a 0%, #fee140 100%)';
+    }else if(icon == '02d'){
+        return document.body.style.backgroundImage = 'linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)';
+    }else if(icon == '03d'){
+        return document.body.style.backgroundImage = 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)';
+    }else if(icon == '04d'){
+        document.body.style.backgroundImage = 'none';
+        document.body.style.background = 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898';
+    }else if(icon == '09d'){
+        return document.body.style.backgroundImage = 'linear-gradient(to right, #fa709a 0%, #fee140 100%)';
+    }else if(icon == '10d'){
+        return document.body.style.backgroundImage = 'linear-gradient(to top, lightgrey 0%, lightgrey 1%, #e0e0e0 26%, #efefef 48%, #d9d9d9 75%, #bcbcbc 100%)';
+    }else if(icon == '11d'){
+        return document.body.style.backgroundImage = 'linear-gradient(to right, #868f96 0%, #596164 100%)';
+    }else if(icon == '13d'){
+        return document.body.style.backgroundImage = 'linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%)';
+    }else if(icon == '14d'){
+        return document.body.style.backgroundImage = 'linear-gradient(to top, #a8edea 0%, #fed6e3 100%)';
+    }
 }
 
 function FahrenheitToCelsius(fah){
