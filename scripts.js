@@ -57,7 +57,7 @@ function toggleBodyColor(icon){
     }else if(icon == '02d'){
         return document.body.style.backgroundImage = 'linear-gradient(to right, #ffecd2 0%, #fcb69f 100%)';
     }else if(icon == '03d'){
-        return document.body.style.backgroundImage = 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)';
+        return document.body.style.backgroundImage = 'linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%)';
     }else if(icon == '04d'){
         document.body.style.backgroundImage = 'none';
         document.body.style.background = 'linear-gradient(to bottom, rgba(255,255,255,0.15) 0%, rgba(0,0,0,0.15) 100%), radial-gradient(at top center, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.40) 120%) #989898';
